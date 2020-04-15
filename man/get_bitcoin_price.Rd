@@ -2,10 +2,13 @@
 % Please edit documentation in R/hello.R
 \name{get_bitcoin_price}
 \alias{get_bitcoin_price}
-\title{This gets the current bitcoin price in USD from Binance}
+\title{Gets the most recent bitcoin price in USD from Binance API}
 \usage{
 get_bitcoin_price(retried = 0)
 }
+\arguments{
+\item{retried}{the number of retries previously done before the exponential backoff sleep}
+}
 \description{
-This gets the current bitcoin price in USD from Binance
+This is a wrapper around a \code{library(binancer)}
 }
