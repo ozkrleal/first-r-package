@@ -1,6 +1,3 @@
-library(binancer)
-library(scales)
-
 #' Gets the most recent bitcoin price in USD from Binance API
 #'
 #' This is a wrapper around a \code{library(binancer)}
