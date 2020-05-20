@@ -1,23 +1,16 @@
 #' Gets the most recent bitcoin price in USD from Binance API
 #'
-#' This is a wrapper around a \code{library(binancer)}
+#' This is a wrapper around a \code{library(daroczig/binancer)} function \code{binance_coins_prices}
 #' @export
 #' @param retried the number of retries previously done before the exponential backoff sleep
 #' @importFrom binancer binance_coins_prices
+#' @importFrom logger log_error
 get_bitcoin_price <- function(retried = 0) {
   tryCatch(
-    binance_coins_prices()[symbol == 'BTC', usd],
+    return(subset(binance_coins_prices(), symbol == 'BTC')$usd),
     error = function(e) {
       ## exponential backoff retries
-      Sys.sleep(1 + retried ^ 2)
+      Sys.sleep(1 + retried^2)
       get_bitcoin_price(retried = retried + 1)
     })
-}
-
-#' This function prints forint formatted.
-#' @param x is the value you want to format.
-#' @export
-#' @importFrom scales dollar
-forint <- function(x) {
-  dollar(x, prefix = '', suffix = 'Ft')
 }
