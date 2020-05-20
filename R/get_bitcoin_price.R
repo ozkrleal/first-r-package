@@ -4,7 +4,6 @@
 #' @export
 #' @param retried the number of retries previously done before the exponential backoff sleep
 #' @importFrom binancer binance_coins_prices
-#' @importFrom logger log_error
 get_bitcoin_price <- function(retried = 0) {
   tryCatch(
     return(subset(binance_coins_prices(), symbol == 'BTC')$usd),
