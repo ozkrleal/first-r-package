@@ -4,10 +4,12 @@
 \alias{get_bitcoin_price}
 \title{Gets the most recent bitcoin price in USD from Binance API}
 \usage{
-get_bitcoin_price(retried = 0)
+get_bitcoin_price(retried = 0, symbol = "BTC")
 }
 \arguments{
 \item{retried}{the number of retries previously done before the exponential backoff sleep}
+
+\item{symbol}{the desired symbol to check on Binance. Default is BTC.}
 }
 \description{
 This is a wrapper around a \code{library(daroczig/binancer)} function \code{binance_coins_prices}

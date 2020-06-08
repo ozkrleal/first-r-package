@@ -2,7 +2,7 @@
 % Please edit documentation in R/forint.R
 \name{forint}
 \alias{forint}
-\title{This function prints forint formatted.}
+\title{This function prints forint formatted wrapping on dollar function.}
 \usage{
 forint(x)
 }
@@ -10,5 +10,5 @@ forint(x)
 \item{x}{is the value you want to format.}
 }
 \description{
-This function prints forint formatted.
+This function prints forint formatted wrapping on dollar function.
 }

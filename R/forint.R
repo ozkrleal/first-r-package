@@ -1,4 +1,4 @@
-#' This function prints forint formatted.
+#' This function prints forint formatted wrapping on dollar function.
 #' @param x is the value you want to format.
 #' @export
 #' @importFrom scales dollar

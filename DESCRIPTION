@@ -4,7 +4,7 @@ Title: Demo R package for the Mastering R class
 Version: 0.1.0
 Author: Oscar <ozkralm10@gmail.com>
 Maintainer: Oscar <ozkralm10@gmail.com>
-Description: Demo R package for the Mastering R class
+Description: Demo R package for the Mastering R class, it contains get_bitcoin_price, forint and convert_currency functions.
 License: AGPL
 Encoding: UTF-8
 LazyData: true
