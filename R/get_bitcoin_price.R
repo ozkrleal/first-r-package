@@ -10,7 +10,7 @@ get_bitcoin_price <- function(retried = 0, symbol = 'BTC') {
     return(subset(binance_coins_prices(), symbol)$usd),
     error = function(e) {
       ## exponential backoff retries
-      Sys.sleep(1 + retried^2)
+      Sys.sleep(1 + retried)
       get_bitcoin_price(retried = retried + 1)
     })
 }
