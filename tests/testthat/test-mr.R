@@ -21,7 +21,6 @@ test_that("convert_currency() is working", {
 })
 
 #context("get_bitcoin_price() context")
-
 #check_api <- function() {
 #  if (!nrow(binancer::binance_coins_prices()) > 0) {
 #    skip("API not available")
