@@ -2,7 +2,7 @@
 % Please edit documentation in R/convert_currency.R
 \name{convert_currency}
 \alias{convert_currency}
-\title{This function prints forint formatted.}
+\title{This function shows the exchange rate of the desired currencies, with any day rate.}
 \usage{
 convert_currency(incurrency, outcurrency, days)
 }
@@ -14,5 +14,5 @@ convert_currency(incurrency, outcurrency, days)
 \item{days}{is the amount of days you want to see the conversion rate}
 }
 \description{
-This function prints forint formatted.
+Note that weekends are off for the API used: api.exchangesratesapi.io/
 }
