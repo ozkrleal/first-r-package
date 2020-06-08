@@ -22,5 +22,5 @@ convert_currency <- function(incurrency, outcurrency, days){
     date = as.Date(names(exchange_rates)),
     rate = as.numeric(unlist(exchange_rates)))
 
-  return(result)
+  return(result[order(date)])
 }
